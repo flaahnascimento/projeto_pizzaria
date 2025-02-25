@@ -1,0 +1,82 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #222; /* Fundo escuro */
+    background-image: url('img/fundo.jpg'); background-image: url('img/fundo.jpg'); 
+    color: #fff; /* Texto claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    width: 350px;
+    background-color: #333; /* Fundo do container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.login-box {
+    text-align: center;
+    margin: 0 auto
+    
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 25px;
+}
+
+.login-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff; /* Cor do título */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #555; /* Borda dos inputs */
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #444; /* Fundo dos inputs */
+    color: #fff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #e74c3c; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #c0392b;
+}

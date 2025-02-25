@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #222;
-    background-image: url('img/fundo.jpg'); 
+    background-image: url('img/fundo.jpg');
     color: #fff;
     display: flex;
     justify-content: center;
@@ -10,31 +10,41 @@ body {
     margin: 0;
 }
 
-.login-container {
-    width: 350px;
+.menu-container {
+    width: 100%;
+    max-width: 600px; /* Aumente a largura máxima */
     background-color: #333;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-.login-box {
+.menu-box {
     text-align: center;
-    margin: 0 auto; /* Adicione esta linha */
 }
 
 .logo {
-    width: 300px; /* Reduza a largura da imagem */
+    width: 400px;
     margin-bottom: 15px;
 }
 
-.login-text {
+.menu-title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 48%; /* Ajuste a largura dos grupos de formulário */
 }
 
 label {
@@ -57,7 +67,7 @@ select {
     color: #fff;
 }
 
-.login-btn {
+.menu-btn {
     width: 100%;
     padding: 14px;
     background-color: #e74c3c;
@@ -70,6 +80,6 @@ select {
     transition: background-color 0.3s ease;
 }
 
-.login-btn:hover {
+.menu-btn:hover {
     background-color: #c0392b;
 }

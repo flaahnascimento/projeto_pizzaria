@@ -3,52 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login GPT</title>
+    <title>Tela de Cardápio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cardapio.css">
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-box">
+    <div class="menu-container">
+        <div class="menu-box">
             <img src="img/cardapio.png" alt="Logo" class="logo">
-            <p class="login-text">CARDAPIO</p>
+            <p class="menu-title">CARDÁPIO</p>
 
-            <form method="GET"> Telefone:<br>
-                <label for="sabor_pizza">Sabor da Pizza:</label>
-            <select name="sabor_pizza" id="sabor_pizza">
-                <option value="">Selecione o sabor</option>
-                <option value="margherita">Margerita</option>
-                <option value="mussarela">Mussarela</option>
-                <option value="calabresa">Calabresa</option>
-                <option value="portuguesa">Portuguesa</option>
-            </select>
+            <form method="GET">
+                <!-- Campo de Quantidade -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="quantidade">Quantidade:</label>
+                        <select name="quantidade" id="quantidade">
+                            <option value="">Selecione a quantidade de pizzas</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4+">4 ou mais...</option>
+                        </select>
+                    </div>
+                </div>
 
+                <!-- Campo de Sabor da Pizza e Borda -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="sabor_pizza">Sabor da Pizza:</label>
+                        <select name="sabor_pizza" id="sabor_pizza">
+                            <option value="">Selecione o sabor</option>
+                            <option value="margherita">Margherita</option>
+                            <option value="mussarela">Mussarela</option>
+                            <option value="calabresa">Calabresa</option>
+                            <option value="portuguesa">Portuguesa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="borda">Defina a borda:</label>
+                        <select name="borda" id="borda">
+                            <option value="">Selecione a borda</option>
+                            <option value="sem_recheio">Sem recheio</option>
+                            <option value="catupiry">Com catupiry</option>
+                            <option value="cheddar">Com cheddar</option>
+                        </select>
+                    </div>
+                </div>
 
-            <label for="sabor_pizza">defina a borda:</label>
-            <select name="sabor_pizza" id="sabor_pizza">
-                <option value="">Selecione a borda</option>
-                <option value="margherita">sem recheio</option>
-                <option value="mussarela">com catupiry</option>
-                <option value="calabresa">com cheddar</option>
-                <option value="portuguesa">de coxinha</option>
-            </select>
+                <!-- Campo de Refrigerantes -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="refrigerante">Refrigerantes:</label>
+                        <select name="refrigerante" id="refrigerante">
+                            <option value="">Selecione a marca</option>
+                            <option value="coca_cola">Coca Cola</option>
+                            <option value="sprite">Sprite</option>
+                            <option value="sukita">Sukita</option>
+                            <option value="convencao">Convenção</option>
+                        </select>
+                    </div>
+                </div>
 
-
-                <label for="sabor_pizza">Refrigerantes:</label>
-            <select name="sabor_pizza" id="sabor_pizza">
-                <option value="">Selecione a marca</option>
-                <option value="marguerita">Coca Cola</option>
-                <option value="mussarela">Sprite</option>
-                <option value="calabresa">Sukita</option>
-                <option value="portuguesa">Convenção</option>
-            </select>
-
-            <a href="index.html">
-                <button type="button" class="login-btn">Cardápio</button>  </a>
-                </a>
+                <!-- Botão Voltar -->
+                <div class="form-row">
+                    <a href="index.html">
+                        <button type="button" class="menu-btn">Voltar</button>
+                    </a>
+                </div>
             </form>
         </div>
     </div>
 </body>
 </html>
-

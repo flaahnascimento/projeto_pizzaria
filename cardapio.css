@@ -115,3 +115,33 @@ select {
 .voltar-btn:hover {
     color: #c0392b; /* Cor do ícone e do texto ao passar o mouse */
 }
+
+/* Estilo do botão Fazer Pedido */
+.fazer-pedido-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 30px; /* Espaçamento acima do botão */
+}
+
+.fazer-pedido-btn {
+    background: none;
+    border: none;
+    color: #e74c3c; /* Cor do ícone e do texto */
+    font-size: 36px; /* Tamanho grande do ícone e do texto */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    font-family: 'Caveat', cursive; /* Fonte de mão puxada */
+    text-transform: uppercase; /* Texto em maiúsculas */
+}
+
+.fazer-pedido-btn span {
+    font-size: 36px; /* Tamanho grande do texto */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.fazer-pedido-btn:hover {
+    color: #c0392b; /* Cor do ícone e do texto ao passar o mouse */
+}

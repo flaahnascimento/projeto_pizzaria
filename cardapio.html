@@ -18,7 +18,6 @@
         </a>
 
         <div class="menu-box">
-        
             <p class="menu-title">CARDÁPIO</p>
 
             <!-- Carrossel de Pizzas -->
@@ -30,15 +29,15 @@
                     </div>
                     <!-- Segunda imagem -->
                     <div class="carousel-item">
-                        <img src="img/pizza2.jpg" class="d-block w-100" alt="Pizza 2">
+                        <img src="img/pizza1.jpeg" class="d-block w-100" alt="Pizza 2">
                     </div>
                     <!-- Terceira imagem -->
                     <div class="carousel-item">
-                        <img src="img/pizza3.webp" class="d-block w-100" alt="Pizza 3">
+                        <img src="img/pizza1.jpeg" class="d-block w-100" alt="Pizza 3">
                     </div>
                     <!-- Quarta imagem -->
                     <div class="carousel-item">
-                        <img src="img/pizza2.jpg" class="d-block w-100" alt="Pizza 4">
+                        <img src="img/pizza1.jpeg" class="d-block w-100" alt="Pizza 4">
                     </div>
                 </div>
             </div>
@@ -60,10 +59,10 @@
                         <label for="sabor_pizza">Sabor da Pizza:</label>
                         <select name="sabor_pizza" id="sabor_pizza">
                             <option value="">Selecione o sabor</option>
-                            <option value="margherita">Margherita</option>
-                            <option value="mussarela">Mussarela</option>
-                            <option value="calabresa">Calabresa</option>
-                            <option value="portuguesa">Portuguesa</option>
+                            <option value="margherita">Margherita - R$ 34,99</option>
+                            <option value="mussarela">Mussarela - R$ 39,99</option>
+                            <option value="calabresa">Calabresa - R$ 39,99</option>
+                            <option value="portuguesa">Portuguesa - R$ 59,99</option>
                         </select>
                     </div>
 
@@ -72,22 +71,30 @@
                         <label for="refrigerante">Refrigerantes:</label>
                         <select name="refrigerante" id="refrigerante">
                             <option value="">Selecione a marca</option>
-                            <option value="coca_cola">Coca Cola</option>
-                            <option value="sprite">Sprite</option>
-                            <option value="sukita">Sukita</option>
-                            <option value="convencao">Convenção</option>
+                            <option value="coca_cola">Coca Cola - R$ 15,00</option>
+                            <option value="sprite">Sprite - R$ 10,00</option>
+                            <option value="sukita">Sukita - R$ 9,00</option>
+                            <option value="convencao">Convenção - R$ 7,00</option>
                         </select>
 
                         <label for="borda">Defina a borda:</label>
                         <select name="borda" id="borda">
                             <option value="">Selecione a borda</option>
                             <option value="sem_recheio">Sem recheio</option>
-                            <option value="catupiry">Com catupiry</option>
-                            <option value="cheddar">Com cheddar</option>
+                            <option value="catupiry">Com catupiry - R$ 3,00</option>
+                            <option value="cheddar">Com cheddar - R$ 5,00</option>
                         </select>
                     </div>
                 </div>
             </form>
+
+            <!-- Botão Fazer Pedido -->
+            <div class="fazer-pedido-container">
+                <button class="fazer-pedido-btn">
+                    <i class="bi bi-cart-check"></i> <!-- Ícone de carrinho do Bootstrap -->
+                    <span>Fazer Pedido</span> <!-- Texto ao lado do ícone -->
+                </button>
+            </div>
         </div>
     </div>
 

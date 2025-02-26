@@ -2,6 +2,8 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #222;
     background-image: url('img/fundo.jpg');
+    background-size: cover; /* Garante que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -11,12 +13,14 @@ body {
 }
 
 .login-container {
-    width: 100%;
-    max-width: 800px;
-    background-color: #333;
+    width: 90%; /* Aumentei a largura para 90% da tela */
+    max-width: 1200px; /* Largura máxima maior */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
     padding: 30px;
     border-radius: 10px;
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    position: relative; /* Para posicionar o botão Cardápio */
 }
 
 .login-box {
@@ -37,7 +41,7 @@ body {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #fff;
+    color: #000; /* Título preto */
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
@@ -51,14 +55,14 @@ body {
 }
 
 .form-group {
-    width: 48%;
+    width: 48%; /* Mantive a divisão em duas colunas */
 }
 
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #fff;
+    color: #000; /* Títulos pretos */
     text-align: left;
 }
 
@@ -68,31 +72,43 @@ textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    border: 2px solid #555;
+    border: 2px solid rgba(0, 0, 0, 0.3); /* Borda preta semi-transparente */
     border-radius: 6px;
     box-sizing: border-box;
     font-size: 16px;
-    background-color: #444;
-    color: #fff;
+    background-color: #F5DEB3; /* Tom de bege */
+    color: #000; /* Texto preto */
+    height: 50px; /* Altura fixa para todos os campos */
 }
 
 textarea {
     resize: vertical;
+    height: 50px; /* Mesma altura que as outras caixas */
 }
 
-.login-btn {
-    width: 100%;
-    padding: 14px;
-    background-color: #e74c3c;
-    color: white;
+/* Estilo do botão Cardápio */
+.cardapio-btn {
+    position: absolute; /* Posiciona o botão no canto superior direito */
+    top: 20px;
+    right: 20px;
+    background: none;
     border: none;
-    border-radius: 6px;
+    color: #e74c3c; /* Cor do ícone e do texto */
+    font-size: 36px; /* Tamanho grande do ícone e do texto */
     cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    font-family: 'Caveat', cursive; /* Fonte de mão puxada */
+    text-transform: uppercase; /* Texto em maiúsculas */
 }
 
-.login-btn:hover {
-    background-color: #c0392b;
+.cardapio-btn span {
+    font-size: 36px; /* Tamanho grande do texto */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.cardapio-btn:hover {
+    color: #c0392b; /* Cor do ícone e do texto ao passar o mouse */
 }

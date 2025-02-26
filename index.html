@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CADASTRO</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet"> <!-- Fonte de mão puxada -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="login-container">
+        <!-- Botão Cardápio no canto superior direito -->
+        <a href="cardapio.html" class="cardapio-btn">
+            <i class="bi bi-arrow-right-circle"></i> <!-- Ícone de seta do Bootstrap -->
+            <span>Cardápio</span> <!-- Texto ao lado do ícone -->
+        </a>
+
         <div class="login-box">
             <img src="img/logo.principal.png" alt="Logo" class="logo">
             <p class="login-text">CADASTRO CLIENTE</p>
             <form method="GET">
+                <!-- Primeira linha: Telefone e Nome -->
                 <div class="form-row">
                     <div class="form-group">
                         <label for="telefone">Telefone:</label>
@@ -23,6 +31,8 @@
                         <input type="text" id="nome" name="nome" required>
                     </div>
                 </div>
+
+                <!-- Segunda linha: Logradouro e Número -->
                 <div class="form-row">
                     <div class="form-group">
                         <label for="logradouro">Logradouro:</label>
@@ -33,6 +43,8 @@
                         <input type="text" id="numero" name="numero" required>
                     </div>
                 </div>
+
+                <!-- Terceira linha: Complemento e Bairro -->
                 <div class="form-row">
                     <div class="form-group">
                         <label for="complemento">Complemento:</label>
@@ -43,6 +55,8 @@
                         <input type="text" id="bairro" name="bairro" required>
                     </div>
                 </div>
+
+                <!-- Quarta linha: Cidade e Estado -->
                 <div class="form-row">
                     <div class="form-group">
                         <label for="cidade">Cidade:</label>
@@ -53,21 +67,18 @@
                         <input type="text" id="estado" name="estado" required>
                     </div>
                 </div>
+
+                <!-- Quinta linha: CEP e Descrição -->
                 <div class="form-row">
                     <div class="form-group">
                         <label for="cep">CEP:</label>
                         <input type="text" id="cep" name="cep" required>
                     </div>
-                </div>
-                <div class="form-row">
                     <div class="form-group">
-                        <label for="referencia">Referência:</label>
-                        <textarea id="referencia" name="referencia"></textarea>
+                        <label for="descricao">Descrição:</label>
+                        <textarea id="descricao" name="descricao"></textarea>
                     </div>
                 </div>
-                <a href="cardapio.html">
-                    <button type="button" class="login-btn">Cardápio</button>
-                </a>
             </form>
         </div>
     </div>

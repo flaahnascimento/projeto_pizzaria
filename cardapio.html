@@ -5,18 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Cardápio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet"> <!-- Fonte de mão puxada -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="cardapio.css">
 </head>
 <body>
     <div class="menu-container">
+        <!-- Botão Voltar no canto superior esquerdo -->
+        <a href="index.html" class="voltar-btn">
+            <i class="bi bi-arrow-left-circle"></i> <!-- Ícone de seta do Bootstrap -->
+            <span>Voltar</span> <!-- Texto ao lado do ícone -->
+        </a>
+
         <div class="menu-box">
-            <img src="img/cardapio.png" alt="Logo" class="logo">
+        
             <p class="menu-title">CARDÁPIO</p>
 
+            <!-- Carrossel de Pizzas -->
+            <div id="carouselPizzas" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Primeira imagem -->
+                    <div class="carousel-item active">
+                        <img src="img/pizza1.jpeg" class="d-block w-100" alt="Pizza 1">
+                    </div>
+                    <!-- Segunda imagem -->
+                    <div class="carousel-item">
+                        <img src="img/pizza2.jpg" class="d-block w-100" alt="Pizza 2">
+                    </div>
+                    <!-- Terceira imagem -->
+                    <div class="carousel-item">
+                        <img src="img/pizza3.webp" class="d-block w-100" alt="Pizza 3">
+                    </div>
+                    <!-- Quarta imagem -->
+                    <div class="carousel-item">
+                        <img src="img/pizza2.jpg" class="d-block w-100" alt="Pizza 4">
+                    </div>
+                </div>
+            </div>
+
             <form method="GET">
-                <!-- Campo de Quantidade -->
+                <!-- Campos lado a lado -->
                 <div class="form-row">
-                    <div class="form-group">
+                    <!-- Lado Esquerdo: Quantidade e Sabor da Pizza -->
+                    <div class="form-group lado-esquerdo">
                         <label for="quantidade">Quantidade:</label>
                         <select name="quantidade" id="quantidade">
                             <option value="">Selecione a quantidade de pizzas</option>
@@ -25,12 +56,7 @@
                             <option value="3">3</option>
                             <option value="4+">4 ou mais...</option>
                         </select>
-                    </div>
-                </div>
 
-                <!-- Campo de Sabor da Pizza e Borda -->
-                <div class="form-row">
-                    <div class="form-group">
                         <label for="sabor_pizza">Sabor da Pizza:</label>
                         <select name="sabor_pizza" id="sabor_pizza">
                             <option value="">Selecione o sabor</option>
@@ -40,7 +66,18 @@
                             <option value="portuguesa">Portuguesa</option>
                         </select>
                     </div>
-                    <div class="form-group">
+
+                    <!-- Lado Direito: Refrigerantes e Defina a Borda -->
+                    <div class="form-group lado-direito">
+                        <label for="refrigerante">Refrigerantes:</label>
+                        <select name="refrigerante" id="refrigerante">
+                            <option value="">Selecione a marca</option>
+                            <option value="coca_cola">Coca Cola</option>
+                            <option value="sprite">Sprite</option>
+                            <option value="sukita">Sukita</option>
+                            <option value="convencao">Convenção</option>
+                        </select>
+
                         <label for="borda">Defina a borda:</label>
                         <select name="borda" id="borda">
                             <option value="">Selecione a borda</option>
@@ -50,29 +87,11 @@
                         </select>
                     </div>
                 </div>
-
-                <!-- Campo de Refrigerantes -->
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="refrigerante">Refrigerantes:</label>
-                        <select name="refrigerante" id="refrigerante">
-                            <option value="">Selecione a marca</option>
-                            <option value="coca_cola">Coca Cola</option>
-                            <option value="sprite">Sprite</option>
-                            <option value="sukita">Sukita</option>
-                            <option value="convencao">Convenção</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Botão Voltar -->
-                <div class="form-row">
-                    <a href="index.html">
-                        <button type="button" class="menu-btn">Voltar</button>
-                    </a>
-                </div>
             </form>
         </div>
     </div>
+
+    <!-- Bootstrap JS (necessário para o carrossel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

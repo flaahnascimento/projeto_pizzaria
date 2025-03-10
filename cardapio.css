@@ -2,8 +2,8 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #222;
     background-image: url('img/fundo.jpg');
-    background-size: cover; /* Garante que a imagem cubra toda a tela */
-    background-position: center; /* Centraliza a imagem de fundo */
+    background-size: cover;
+    background-position: center;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -13,71 +13,52 @@ body {
 }
 
 .menu-container {
-    width: 90%; /* Aumentei a largura para 90% da tela */
-    max-width: 1200px; /* Largura máxima maior */
+    width: 90%;
+    max-width: 1200px;
     background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
     padding: 30px;
     border-radius: 10px;
-    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    backdrop-filter: blur(10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    position: relative; /* Para posicionar o botão Voltar */
+    position: relative;
 }
 
 .menu-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     text-align: center;
-}
-
-.logo {
-    width: 400px;
-    margin-bottom: 15px;
 }
 
 .menu-title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #000; /* Título preto */
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-/* Estilo do carrossel */
-.carousel {
-    margin-bottom: 30px; /* Espaçamento abaixo do carrossel */
-    background-color: #F5DEB3; /* Fundo bege */
-    border-radius: 10px; /* Bordas arredondadas */
-    overflow: hidden; /* Para garantir que as imagens respeitem o border-radius */
-}
-
-.carousel-inner {
-    border-radius: 10px; /* Bordas arredondadas para as imagens */
-}
-
-.carousel-item img {
-    border-radius: 10px; /* Bordas arredondadas para as imagens */
-}
-
-/* Estilo dos campos de seleção e botões */
 .form-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-/* Lado Esquerdo e Direito */
-.lado-esquerdo, .lado-direito {
-    width: 48%; /* Cada lado ocupa 48% da largura */
+.form-group {
+    width: 48%; /* Divisão em duas colunas */
 }
 
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #000; /* Títulos pretos */
+    color: #000;
     text-align: left;
 }
 
-select {
+input[type="text"],
+input[type="number"] {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -86,62 +67,62 @@ select {
     box-sizing: border-box;
     font-size: 16px;
     background-color: #F5DEB3; /* Tom de bege */
-    color: #000; /* Texto preto */
+    color: #000;
+    height: 50px;
 }
 
-/* Estilo do botão Voltar */
-.voltar-btn {
-    position: absolute; /* Posiciona o botão no canto superior esquerdo */
-    top: 20px;
-    left: 20px;
-    background: none;
-    border: none;
-    color: #e74c3c; /* Cor do ícone e do texto */
-    font-size: 36px; /* Tamanho grande do ícone e do texto */
-    cursor: pointer;
-    transition: color 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espaço entre o ícone e o texto */
-    font-family: 'Caveat', cursive; /* Fonte de mão puxada */
-    text-transform: uppercase; /* Texto em maiúsculas */
-}
-
-.voltar-btn span {
-    font-size: 36px; /* Tamanho grande do texto */
-    font-weight: bold; /* Texto em negrito */
-}
-
-.voltar-btn:hover {
-    color: #c0392b; /* Cor do ícone e do texto ao passar o mouse */
-}
-
-/* Estilo do botão Fazer Pedido */
 .fazer-pedido-container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    margin-top: 30px; /* Espaçamento acima do botão */
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .fazer-pedido-btn {
     background: none;
     border: none;
-    color: #e74c3c; /* Cor do ícone e do texto */
-    font-size: 36px; /* Tamanho grande do ícone e do texto */
+    color: #e74c3c;
+    font-size: 36px;
     cursor: pointer;
     transition: color 0.3s ease;
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaço entre o ícone e o texto */
-    font-family: 'Caveat', cursive; /* Fonte de mão puxada */
-    text-transform: uppercase; /* Texto em maiúsculas */
+    gap: 10px;
+    font-family: 'Caveat', cursive;
+    text-transform: uppercase;
 }
 
 .fazer-pedido-btn span {
-    font-size: 36px; /* Tamanho grande do texto */
-    font-weight: bold; /* Texto em negrito */
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .fazer-pedido-btn:hover {
-    color: #c0392b; /* Cor do ícone e do texto ao passar o mouse */
+    color: #c0392b;
+}
+
+/* Estilo do botão Voltar */
+.voltar-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 36px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Caveat', cursive;
+    text-transform: uppercase;
+}
+
+.voltar-btn span {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.voltar-btn:hover {
+    color: #c0392b;
 }

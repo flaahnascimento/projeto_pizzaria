@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Cardápio</title>
+    <title>Cadastro de Cardápio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet"> <!-- Fonte de mão puxada -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="cardapio.css">
 </head>
 <body>
@@ -18,87 +17,54 @@
         </a>
 
         <div class="menu-box">
-            <p class="menu-title">CARDÁPIO</p>
+            <p class="menu-title">Cadastrar Cardápio</p>
 
-            <!-- Carrossel de Pizzas -->
-            <div id="carouselPizzas" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Primeira imagem -->
-                    <div class="carousel-item active">
-                        <img src="img/pizza1.jpeg" class="d-block w-100" alt="Pizza 1">
+            <form method="POST">
+                <!-- Campos para cadastrar pizza -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="sabor_pizza">Sabor da Pizza:</label>
+                        <input type="text" id="sabor_pizza" name="sabor_pizza" required>
                     </div>
-                    <!-- Segunda imagem -->
-                    <div class="carousel-item">
-                        <img src="img/pizza1.jpeg" class="d-block w-100" alt="Pizza 2">
-                    </div>
-                    <!-- Terceira imagem -->
-                    <div class="carousel-item">
-                        <img src="img/pizza1.jpeg" class="d-block w-100" alt="Pizza 3">
-                    </div>
-                    <!-- Quarta imagem -->
-                    <div class="carousel-item">
-                        <img src="img/pizza1.jpeg" class="d-block w-100" alt="Pizza 4">
+                    <div class="form-group">
+                        <label for="preco_pizza">Preço da Pizza (R$):</label>
+                        <input type="number" step="0.01" id="preco_pizza" name="preco_pizza" required>
                     </div>
                 </div>
-            </div>
 
-            <form method="GET">
-                <!-- Campos lado a lado -->
+                <!-- Campos para cadastrar refrigerante -->
                 <div class="form-row">
-                    <!-- Lado Esquerdo: Quantidade e Sabor da Pizza -->
-                    <div class="form-group lado-esquerdo">
-                        <label for="quantidade">Quantidade:</label>
-                        <select name="quantidade" id="quantidade">
-                            <option value="">Selecione a quantidade de pizzas</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4+">4 ou mais...</option>
-                        </select>
-
-                        <label for="sabor_pizza">Sabor da Pizza:</label>
-                        <select name="sabor_pizza" id="sabor_pizza">
-                            <option value="">Selecione o sabor</option>
-                            <option value="margherita">Margherita - R$ 34,99</option>
-                            <option value="mussarela">Mussarela - R$ 39,99</option>
-                            <option value="calabresa">Calabresa - R$ 39,99</option>
-                            <option value="portuguesa">Portuguesa - R$ 59,99</option>
-                        </select>
+                    <div class="form-group">
+                        <label for="nome_refri">Nome do Refrigerante:</label>
+                        <input type="text" id="nome_refri" name="nome_refri" required>
                     </div>
-
-                    <!-- Lado Direito: Refrigerantes e Defina a Borda -->
-                    <div class="form-group lado-direito">
-                        <label for="refrigerante">Refrigerantes:</label>
-                        <select name="refrigerante" id="refrigerante">
-                            <option value="">Selecione a marca</option>
-                            <option value="coca_cola">Coca Cola - R$ 15,00</option>
-                            <option value="sprite">Sprite - R$ 10,00</option>
-                            <option value="sukita">Sukita - R$ 9,00</option>
-                            <option value="convencao">Convenção - R$ 7,00</option>
-                        </select>
-
-                        <label for="borda">Defina a borda:</label>
-                        <select name="borda" id="borda">
-                            <option value="">Selecione a borda</option>
-                            <option value="sem_recheio">Sem recheio</option>
-                            <option value="catupiry">Com catupiry - R$ 3,00</option>
-                            <option value="cheddar">Com cheddar - R$ 5,00</option>
-                        </select>
+                    <div class="form-group">
+                        <label for="preco_refri">Preço do Refrigerante (R$):</label>
+                        <input type="number" step="0.01" id="preco_refri" name="preco_refri" required>
                     </div>
+                </div>
+
+                <!-- Campos para cadastrar borda -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipo_borda">Tipo de Borda:</label>
+                        <input type="text" id="tipo_borda" name="tipo_borda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preco_borda">Preço da Borda (R$):</label>
+                        <input type="number" step="0.01" id="preco_borda" name="preco_borda" required>
+                    </div>
+                </div>
+
+                <!-- Botão para salvar cadastro -->
+                <div class="fazer-pedido-container">
+                    <button class="fazer-pedido-btn" type="submit">
+                        <i class="bi bi-save"></i> <!-- Ícone de salvar -->
+                        <span>Salvar Cadastro</span> <!-- Texto ao lado do ícone -->
+                    </button>
                 </div>
             </form>
-
-            <!-- Botão Fazer Pedido -->
-            <div class="fazer-pedido-container">
-                <button class="fazer-pedido-btn">
-                    <i class="bi bi-cart-check"></i> <!-- Ícone de carrinho do Bootstrap -->
-                    <span>Fazer Pedido</span> <!-- Texto ao lado do ícone -->
-                </button>
-            </div>
         </div>
     </div>
-
-    <!-- Bootstrap JS (necessário para o carrossel) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

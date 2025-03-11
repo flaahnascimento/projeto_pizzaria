@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CADASTRO</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet"> <!-- Fonte de mão puxada -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="login-container">
-        <!-- Botão Cardápio no canto superior direito -->
+
         <a href="cardapio.html" class="cardapio-btn">
-            <i class="bi bi-arrow-right-circle"></i> <!-- Ícone de seta do Bootstrap -->
-            <span>Cardápio</span> <!-- Texto ao lado do ícone -->
+            <i class="bi bi-arrow-right-circle"></i>
+            <span>Cadastrar Pizza</span>
         </a>
 
         <div class="login-box">
             <img src="img/logo.principal.png" alt="Logo" class="logo">
             <p class="login-text">CADASTRO CLIENTE</p>
             <form method="GET">
-                <!-- Primeira linha: Telefone e Nome -->
+
                 <div class="form-row">
                     <div class="form-group">
                         <label for="telefone">Telefone:</label>
@@ -32,7 +34,6 @@
                     </div>
                 </div>
 
-                <!-- Segunda linha: Logradouro e Número -->
                 <div class="form-row">
                     <div class="form-group">
                         <label for="logradouro">Logradouro:</label>
@@ -44,7 +45,6 @@
                     </div>
                 </div>
 
-                <!-- Terceira linha: Complemento e Bairro -->
                 <div class="form-row">
                     <div class="form-group">
                         <label for="complemento">Complemento:</label>
@@ -56,7 +56,6 @@
                     </div>
                 </div>
 
-                <!-- Quarta linha: Cidade e Estado -->
                 <div class="form-row">
                     <div class="form-group">
                         <label for="cidade">Cidade:</label>
@@ -68,7 +67,6 @@
                     </div>
                 </div>
 
-                <!-- Quinta linha: CEP e Descrição -->
                 <div class="form-row">
                     <div class="form-group">
                         <label for="cep">CEP:</label>
@@ -79,8 +77,16 @@
                         <textarea id="descricao" name="descricao"></textarea>
                     </div>
                 </div>
+
+                <div class="fazer-pedido-container">
+                    <button class="fazer-pedido-btn" type="submit">
+                        <i class="bi bi-save"></i>
+                        <span>Salvar Cadastro</span>
+                    </button>
+
             </form>
         </div>
     </div>
 </body>
+
 </html>

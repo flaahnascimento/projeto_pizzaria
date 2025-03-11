@@ -1,9 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #222;
-    background-image: url('img/fundo.jpg');
-    background-size: cover; /* Garante que a imagem cubra toda a tela */
-    background-position: center; /* Centraliza a imagem de fundo */
+    background-image: url('img/pizza.fundo.webp');
+    background-size: cover;
+    background-position: center;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -13,14 +13,14 @@ body {
 }
 
 .login-container {
-    width: 90%; /* Aumentei a largura para 90% da tela */
-    max-width: 1200px; /* Largura máxima maior */
-    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 10px;
-    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    backdrop-filter: blur(10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    position: relative; /* Para posicionar o botão Cardápio */
+    position: relative;
 }
 
 .login-box {
@@ -41,7 +41,7 @@ body {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #000; /* Título preto */
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
@@ -55,14 +55,14 @@ body {
 }
 
 .form-group {
-    width: 48%; /* Mantive a divisão em duas colunas */
+    width: 48%;
 }
 
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #000; /* Títulos pretos */
+    color: #fff;
     text-align: left;
 }
 
@@ -72,43 +72,98 @@ textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.3); /* Borda preta semi-transparente */
+    border: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 6px;
     box-sizing: border-box;
     font-size: 16px;
-    background-color: #F5DEB3; /* Tom de bege */
-    color: #000; /* Texto preto */
-    height: 50px; /* Altura fixa para todos os campos */
+    background-color: #F5DEB3;
+    color: #000;
+    height: 50px;
 }
 
 textarea {
     resize: vertical;
-    height: 50px; /* Mesma altura que as outras caixas */
+    height: 50px;
 }
 
-/* Estilo do botão Cardápio */
 .cardapio-btn {
-    position: absolute; /* Posiciona o botão no canto superior direito */
+    position: absolute;
     top: 20px;
     right: 20px;
     background: none;
     border: none;
-    color: #e74c3c; /* Cor do ícone e do texto */
-    font-size: 36px; /* Tamanho grande do ícone e do texto */
+    color: #e74c3c;
+    font-size: 36px;
     cursor: pointer;
     transition: color 0.3s ease;
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaço entre o ícone e o texto */
-    font-family: 'Caveat', cursive; /* Fonte de mão puxada */
-    text-transform: uppercase; /* Texto em maiúsculas */
+    gap: 10px;
+    font-family: 'Caveat', cursive;
+    text-transform: uppercase;
 }
 
 .cardapio-btn span {
-    font-size: 36px; /* Tamanho grande do texto */
-    font-weight: bold; /* Texto em negrito */
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .cardapio-btn:hover {
-    color: #c0392b; /* Cor do ícone e do texto ao passar o mouse */
+    color: #c0392b;
+}
+
+
+.fazer-pedido-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.fazer-pedido-btn {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 36px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Caveat', cursive;
+    text-transform: uppercase;
+}
+
+.fazer-pedido-btn span {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.fazer-pedido-btn:hover {
+    color: #c0392b;
+}
+
+.voltar-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 36px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Caveat', cursive;
+    text-transform: uppercase;
+}
+
+.voltar-btn span {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.voltar-btn:hover {
+    color: #c0392b;
 }

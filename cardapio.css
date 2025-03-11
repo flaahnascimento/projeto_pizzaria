@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #222;
-    background-image: url('img/fundo.jpg');
+    background-image: url('img/fundo.pizza.webp');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -15,7 +15,7 @@ body {
 .menu-container {
     width: 90%;
     max-width: 1200px;
-    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
@@ -34,7 +34,7 @@ body {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -46,14 +46,14 @@ body {
 }
 
 .form-group {
-    width: 48%; /* Divisão em duas colunas */
+    width: 48%;
 }
 
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #000;
+    color: #fff;
     text-align: left;
 }
 
@@ -62,11 +62,11 @@ input[type="number"] {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.3); /* Borda preta semi-transparente */
+    border: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 6px;
     box-sizing: border-box;
     font-size: 16px;
-    background-color: #F5DEB3; /* Tom de bege */
+    background-color: #F5DEB3;
     color: #000;
     height: 50px;
 }
@@ -100,7 +100,6 @@ input[type="number"] {
     color: #c0392b;
 }
 
-/* Estilo do botão Voltar */
 .voltar-btn {
     position: absolute;
     top: 20px;

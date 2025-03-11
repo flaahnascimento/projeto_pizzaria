@@ -1,70 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Cardápio</title>
+    <title>Cadastro de Pizza</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet"> <!-- Fonte de mão puxada -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cardapio.css">
 </head>
+
 <body>
     <div class="menu-container">
-        <!-- Botão Voltar no canto superior esquerdo -->
+
         <a href="index.html" class="voltar-btn">
-            <i class="bi bi-arrow-left-circle"></i> <!-- Ícone de seta do Bootstrap -->
-            <span>Voltar</span> <!-- Texto ao lado do ícone -->
+            <i class="bi bi-arrow-left-circle"></i>
+            <span>Voltar</span>
         </a>
 
         <div class="menu-box">
-            <p class="menu-title">Cadastrar Cardápio</p>
+            <p class="menu-title">Cadastrar Pizza</p>
 
             <form method="POST">
-                <!-- Campos para cadastrar pizza -->
+
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="sabor_pizza">Sabor da Pizza:</label>
-                        <input type="text" id="sabor_pizza" name="sabor_pizza" required>
+                        <label for="codigo_pizza">Código da Pizza:</label>
+                        <input type="text" id="codigo_pizza" name="codigo_pizza" required>
                     </div>
                     <div class="form-group">
-                        <label for="preco_pizza">Preço da Pizza (R$):</label>
-                        <input type="number" step="0.01" id="preco_pizza" name="preco_pizza" required>
+                        <label for="nome_pizza">Nome da Pizza:</label>
+                        <input type="text" id="nome_pizza" name="nome_pizza" required>
                     </div>
                 </div>
 
-                <!-- Campos para cadastrar refrigerante -->
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="nome_refri">Nome do Refrigerante:</label>
-                        <input type="text" id="nome_refri" name="nome_refri" required>
+                        <label for="descricao_pizza">Descrição:</label>
+                        <input type="text" id="descricao_pizza" name="descricao_pizza" required>
                     </div>
                     <div class="form-group">
-                        <label for="preco_refri">Preço do Refrigerante (R$):</label>
-                        <input type="number" step="0.01" id="preco_refri" name="preco_refri" required>
+                        <label for="valor_pizza">Valor da Pizza (R$):</label>
+                        <input type="number" step="0.01" id="valor_pizza" name="valor_pizza" required>
                     </div>
                 </div>
 
-                <!-- Campos para cadastrar borda -->
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="tipo_borda">Tipo de Borda:</label>
-                        <input type="text" id="tipo_borda" name="tipo_borda" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="preco_borda">Preço da Borda (R$):</label>
-                        <input type="number" step="0.01" id="preco_borda" name="preco_borda" required>
-                    </div>
-                </div>
-
-                <!-- Botão para salvar cadastro -->
                 <div class="fazer-pedido-container">
                     <button class="fazer-pedido-btn" type="submit">
-                        <i class="bi bi-save"></i> <!-- Ícone de salvar -->
-                        <span>Salvar Cadastro</span> <!-- Texto ao lado do ícone -->
+                        <i class="bi bi-save"></i>
+                        <span>Salvar Cadastro</span>
                     </button>
                 </div>
             </form>
         </div>
     </div>
 </body>
+
 </html>
